@@ -17,6 +17,7 @@ class Game {
     
     init (countItem:Int) {
         self.countItem = countItem
+        setupGame()
     }
     
     func setupGame() {
