@@ -13,6 +13,8 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var labelStatusGame: UILabel!
     
+    lazy var  game = Game(countItem: buttons.count)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,5 +27,12 @@ class GameViewController: UIViewController {
         sender.isHidden = true
     }
     
+    
+    private func setupScreen (){
+        for index in game.items.indices{
+            buttons[index].setTitle(game.items[index].title, for: .normal)
+            buttons[index].isHidden = false
+        }
+    }
     
 }
