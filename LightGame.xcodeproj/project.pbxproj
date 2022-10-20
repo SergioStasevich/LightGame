@@ -15,6 +15,7 @@
 		84875D5928FFB383005E3AA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84875D5728FFB383005E3AA3 /* LaunchScreen.storyboard */; };
 		84875D6128FFB6A2005E3AA3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84875D6028FFB6A2005E3AA3 /* GameViewController.swift */; };
 		84875D6328FFBA86005E3AA3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84875D6228FFBA86005E3AA3 /* Game.swift */; };
+		84875D652901BE25005E3AA3 /* ExtensionGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84875D642901BE25005E3AA3 /* ExtensionGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		84875D5A28FFB383005E3AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84875D6028FFB6A2005E3AA3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		84875D6228FFBA86005E3AA3 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		84875D642901BE25005E3AA3 /* ExtensionGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +62,26 @@
 		84875D4B28FFB382005E3AA3 /* LightGame */ = {
 			isa = PBXGroup;
 			children = (
+				84875D662901BE5F005E3AA3 /* controllers */,
 				84875D4C28FFB382005E3AA3 /* AppDelegate.swift */,
 				84875D4E28FFB382005E3AA3 /* SceneDelegate.swift */,
-				84875D5028FFB382005E3AA3 /* ViewController.swift */,
 				84875D5228FFB382005E3AA3 /* Main.storyboard */,
-				84875D6228FFBA86005E3AA3 /* Game.swift */,
-				84875D6028FFB6A2005E3AA3 /* GameViewController.swift */,
 				84875D5528FFB383005E3AA3 /* Assets.xcassets */,
 				84875D5728FFB383005E3AA3 /* LaunchScreen.storyboard */,
 				84875D5A28FFB383005E3AA3 /* Info.plist */,
 			);
 			path = LightGame;
+			sourceTree = "<group>";
+		};
+		84875D662901BE5F005E3AA3 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84875D6028FFB6A2005E3AA3 /* GameViewController.swift */,
+				84875D5028FFB382005E3AA3 /* ViewController.swift */,
+				84875D6228FFBA86005E3AA3 /* Game.swift */,
+				84875D642901BE25005E3AA3 /* ExtensionGame.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84875D6128FFB6A2005E3AA3 /* GameViewController.swift in Sources */,
+				84875D652901BE25005E3AA3 /* ExtensionGame.swift in Sources */,
 				84875D6328FFBA86005E3AA3 /* Game.swift in Sources */,
 				84875D5128FFB382005E3AA3 /* ViewController.swift in Sources */,
 				84875D4D28FFB382005E3AA3 /* AppDelegate.swift in Sources */,
