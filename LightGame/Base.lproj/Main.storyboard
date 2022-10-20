@@ -187,17 +187,27 @@
                                     <action selector="pressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k2l-fe-8T6"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYH-aH-l0g">
+                                <rect key="frame" x="50" y="133" width="314" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CEm-ZE-ypg" secondAttribute="trailing" constant="20" id="DUk-VI-BxN"/>
+                            <constraint firstItem="fYH-aH-l0g" firstAttribute="top" secondItem="CEm-ZE-ypg" secondAttribute="bottom" constant="20" id="DsC-bI-o87"/>
                             <constraint firstItem="CEm-ZE-ypg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LgQ-bi-TaO"/>
+                            <constraint firstItem="fYH-aH-l0g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Mr1-NC-lP9"/>
                             <constraint firstItem="CEm-ZE-ypg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="h9i-sX-pMW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fYH-aH-l0g" secondAttribute="trailing" constant="50" id="j1Y-Ej-Qsk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="labelStatusGame" destination="CEm-ZE-ypg" id="R6C-dn-amQ"/>
+                        <outlet property="nextDigit" destination="fYH-aH-l0g" id="7Uh-EM-Ed1"/>
                         <outletCollection property="buttons" destination="E6X-oZ-PDH" collectionClass="NSMutableArray" id="47G-pf-lcZ"/>
                         <outletCollection property="buttons" destination="tYQ-0P-kPV" collectionClass="NSMutableArray" id="aB0-Cq-5nv"/>
                         <outletCollection property="buttons" destination="Csx-Ho-dWh" collectionClass="NSMutableArray" id="ITN-sO-SKf"/>
