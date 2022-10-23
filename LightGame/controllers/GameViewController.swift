@@ -1,9 +1,4 @@
-//
-//  GameViewController.swift
-//  LightGame
-//
-//  Created by Siarhei Stasevich on 19/10/2022.
-//
+
 
 import UIKit
 
@@ -18,7 +13,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var labelStatusGame: UILabel!
     
     
-    lazy var  game = Game(countItem: buttons.count, time: 30) {[weak self](status,time)  in
+    lazy var  game = Game(countItem: buttons.count) {[weak self](status,time)  in
         guard let self = self else {return}
         self.timerGame.text = time.secondsToString()
         self.updateInfo(with: status)
@@ -30,6 +25,11 @@ class GameViewController: UIViewController {
         setupScreen ()
     }
 
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        game.stopGame()
+    }
+    
     @IBAction func pressButton(_ sender: UIButton) {
         guard let buttonIndex = buttons.firstIndex(of: sender) else {return}
         game.check(index: buttonIndex)
